@@ -2,13 +2,29 @@ spring:
   application:
     name: account-service
   config:
-    import: optional:configserver:
+    import: none
+  cloud:
+    discovery:
+      enabled: false
+    config:
+      enabled: false
+  kafka:
+    bootstrap-servers: ${spring.embedded.kafka.brokers:localhost:9092}
   jpa:
     hibernate:
       ddl-auto: create-drop
-    show-sql: true
-  datasource:
-    url: jdbc:postgresql://localhost:5432/testdb
-    username: test
-    password: test
+    show-sql: false
+  security:
+    user:
+      name: user
+      password: password
+
+eureka:
+  client:
+    enabled: false
+
+management:
+  health:
+    circuitbreakers:
+      enabled: false
 
