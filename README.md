@@ -1,5 +1,8 @@
 ![Build Status](https://github.com/serhatsoysal/distributed-banking-system/actions/workflows/ci.yml/badge.svg)
 ![CodeQL](https://github.com/serhatsoysal/distributed-banking-system/actions/workflows/codeql.yml/badge.svg)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=serhatsoysal_distributed-banking-system&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=serhatsoysal_distributed-banking-system)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=serhatsoysal_distributed-banking-system&metric=coverage)](https://sonarcloud.io/summary/new_code?id=serhatsoysal_distributed-banking-system)
+[![codecov](https://codecov.io/gh/serhatsoysal/distributed-banking-system/branch/master/graph/badge.svg)](https://codecov.io/gh/serhatsoysal/distributed-banking-system)
 ![Java](https://img.shields.io/badge/Java-21-orange.svg)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.1-brightgreen.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)

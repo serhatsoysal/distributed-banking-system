@@ -37,6 +37,14 @@ jobs:
     - name: Maven Code Coverage
       run: mvn clean test jacoco:report
       continue-on-error: true
+    
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        files: ./target/site/jacoco/jacoco.xml,**/target/site/jacoco/jacoco.xml
+        flags: unittests
+        name: codecov-umbrella
+        fail_ci_if_error: false
 
   build-and-test:
     name: Build & Test
