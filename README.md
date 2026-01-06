@@ -1,3 +1,5 @@
+![Build Status](https://github.com/serhatsoysal/spring/actions/workflows/ci.yml/badge.svg)
+
 # Enterprise Banking Microservices Platform
 
 Professional Spring Boot microservices architecture demonstrating senior-level design patterns, annotations, and best practices for banking domain.
