@@ -1,6 +1,8 @@
 spring:
   application:
     name: account-service
+  profiles:
+    active: test
   config:
     import: none
   cloud:
@@ -9,7 +11,7 @@ spring:
     config:
       enabled: false
   kafka:
-    bootstrap-servers: ${spring.embedded.kafka.brokers:localhost:9092}
+    bootstrap-servers: localhost:9092
   jpa:
     hibernate:
       ddl-auto: create-drop

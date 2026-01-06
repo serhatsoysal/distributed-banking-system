@@ -1,28 +1,26 @@
 package com.banking.account.controller;
 
-import com.banking.account.dto.AccountResponse;
-import com.banking.account.service.AccountService;
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+
 import org.junit.jupiter.api.Test;
+import static org.mockito.Mockito.when;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.context.annotation.Import;
-import org.springframework.security.test.context.support.WithMockUser;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
-
-import com.banking.account.config.SecurityConfig;
-
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
-
-import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import com.banking.account.dto.AccountResponse;
+import com.banking.account.service.AccountService;
+
 @WebMvcTest(AccountController.class)
 @AutoConfigureMockMvc(addFilters = false)
+@ActiveProfiles("test")
 class AccountControllerTest {
 
     @Autowired

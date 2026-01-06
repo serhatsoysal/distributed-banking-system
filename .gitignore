@@ -2,6 +2,8 @@
 .env.local
 .env.*.local
 
+logs.txt
+
 # Maven
 target/
 !.mvn/wrapper/maven-wrapper.jar
