@@ -16,12 +16,16 @@ target/
 *.jar
 *.war
 *.ear
+*.class
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
 pom.xml.next
 release.properties
 dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
 
 # Eclipse
 .apt_generated
@@ -31,6 +35,7 @@ dependency-reduced-pom.xml
 .settings
 .springBeans
 .sts4-cache
+bin/
 
 # IntelliJ IDEA
 .idea
@@ -38,6 +43,7 @@ dependency-reduced-pom.xml
 *.iml
 *.ipr
 out/
+.idea_modules/
 
 # NetBeans
 /nbproject/private/
@@ -51,13 +57,42 @@ build/
 
 # VS Code
 .vscode/
+.history/
 
 # OS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+Desktop.ini
 
 # Temporary
 *.tmp
 *.bak
 *.swp
 *~
+*.orig
+
+# JaCoCo
+*.exec
+jacoco.xml
+
+# Test Reports
+test-output/
+surefire-reports/
+
+# Security
+*.key
+*.pem
+*.crt
+*.p12
+*.jks
+*.truststore
+*.keystore
+
+# Docker
+docker-compose.override.yml
+
