@@ -1,32 +1,18 @@
 spring:
   application:
     name: account-service
-  profiles:
-    active: test
-  config:
-    import: none
-  cloud:
-    discovery:
-      enabled: false
-    config:
-      enabled: false
-  kafka:
-    bootstrap-servers: localhost:9092
   jpa:
     hibernate:
       ddl-auto: create-drop
-    show-sql: false
-  security:
-    user:
-      name: user
-      password: password
+  kafka:
+    bootstrap-servers: localhost:9092
+  cloud:
+    config:
+      enabled: false
+      import-check:
+        enabled: false
 
 eureka:
   client:
     enabled: false
-
-management:
-  health:
-    circuitbreakers:
-      enabled: false
 
