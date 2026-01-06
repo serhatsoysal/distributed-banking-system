@@ -1,4 +1,4 @@
-![Build Status](https://github.com/serhatsoysal/spring/actions/workflows/ci.yml/badge.svg)
+![Build Status](https://github.com/serhatsoysal/distributed-banking-system/actions/workflows/ci.yml/badge.svg)
 
 # Enterprise Banking Microservices Platform
 

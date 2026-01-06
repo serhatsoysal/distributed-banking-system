@@ -1,8 +1,12 @@
-# Environment
+# Environment Variables
+.env
 .env.local
 .env.*.local
 
+# Logs
 logs.txt
+*.log
+logs/
 
 # Maven
 target/
@@ -51,10 +55,6 @@ build/
 # OS
 .DS_Store
 Thumbs.db
-
-# Logs
-*.log
-logs/
 
 # Temporary
 *.tmp
